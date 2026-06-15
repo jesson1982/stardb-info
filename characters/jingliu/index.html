@@ -1,16 +1,16 @@
 ﻿<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>镜流培养完全攻略 2026 - 光锥/遗器/配队详解 | StarDB</title>
-    <meta name="description" content="镜流(Jingliu)2026最新版本完整培养指南：专武与四星光锥对比、冰伤遗器套装选择、双爆阈值计算、三种主流配队方案实测数据">
-    <meta name="keywords" content="镜流, Jingliu, 崩坏星穹铁道, 角色攻略, 光锥推荐, 遗器搭配, 配队建议, 冰属性毁灭">
+    <title>Jingliu Best Build Guide 2026 - Light Cones, Relics & Teams | StarDB</title>
+    <meta name="description" content="Complete Jingliu guide for Honkai: Star Rail. Learn optimal light cones, relic sets, CRIT thresholds, and best team compositions for this powerful Ice DPS">
+    <meta name="keywords" content="Jingliu, Honkai Star Rail, character build, light cone, relics, team composition, Ice Destruction">
     <link rel="canonical" href="https://stardb.info/characters/jingliu/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="镜流培养完全攻略 - StarDB">
-    <meta property="og:description" content="镜流2026最新光锥、遗器、配队全方位解析">
+    <meta property="og:title" content="Jingliu Complete Build Guide - StarDB">
+    <meta property="og:description" content="Jingliu 2026 best light cones, relics, and teams comprehensive analysis">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://stardb.info/characters/jingliu/">
     
@@ -19,8 +19,8 @@
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "镜流培养完全攻略 2026",
-        "description": "镜流完整培养指南，包含光锥、遗器、配队详解",
+        "headline": "Jingliu Best Build Guide 2026",
+        "description": "Complete Jingliu guide with light cones, relics, and teams",
         "author": {
             "@type": "Organization",
             "name": "StarDB"
@@ -33,8 +33,8 @@
                 "url": "https://stardb.info/favicon.svg"
             }
         },
-        "datePublished": "2026-06-12",
-        "dateModified": "2026-06-12"
+        "datePublished": "2026-06-15",
+        "dateModified": "2026-06-15"
     }
     </script>
     
@@ -70,13 +70,13 @@
                 <span class="logo-text">StarDB</span>
             </a>
             <ul class="nav-menu">
-                <li><a href="/">首页</a></li>
-                <li><a href="/characters/" class="active">角色攻略</a></li>
-                <li><a href="/memory-of-chaos/">忘却之庭</a></li>
-                <li><a href="/simulated-universe/">模拟宇宙</a></li>
-                <li><a href="/resources/">素材资源</a></li>
-                <li><a href="/tier-list/">节奏榜</a></li>
-                <li><a href="/faq/">常见问题</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/characters/" class="active">Characters</a></li>
+                <li><a href="/memory-of-chaos/">MoC</a></li>
+                <li><a href="/simulated-universe/">SU</a></li>
+                <li><a href="/resources/">Resources</a></li>
+                <li><a href="/tier-list/">Tier List</a></li>
+                <li><a href="/faq/">FAQ</a></li>
             </ul>
             <button class="mobile-menu-toggle">☰</button>
         </div>
@@ -85,12 +85,12 @@
     <main>
         <section class="hero" style="padding: 2rem 0;">
             <div class="container">
-                <h1>镜流培养完全攻略</h1>
-                <p class="hero-subtitle">冰属性毁灭命途 · 转魄爆发流核心C位</p>
+                <h1>Jingliu Complete Build Guide</h1>
+                <p class="hero-subtitle">Ice Destruction Path • Transcendence Burst DPS Core</p>
             </div>
         </section>
 
-        <!-- 社交链接 -->
+        <!-- Social Links -->
         <section class="social-bar">
             <div class="container">
                 <div class="social-links">
@@ -107,131 +107,131 @@
         </section>
 
         <article class="guide-content">
-            <!-- 目录 -->
+            <!-- Table of Contents -->
             <div class="toc">
-                <h3>📋 文章目录</h3>
+                <h3>📋 Table of Contents</h3>
                 <ul>
-                    <li><a href="#overview">角色概览与定位</a></li>
-                    <li><a href="#lightcone">光锥选择与对比</a></li>
-                    <li><a href="#relics">遗器套装与词条</a></li>
-                    <li><a href="#teams">配队方案详解</a></li>
-                    <li><a href="#rotation">输出循环与手法</a></li>
-                    <li><a href="#eidolon">星魂优先级</a></li>
+                    <li><a href="#overview">Character Overview</a></li>
+                    <li><a href="#lightcone">Light Cone Comparison</a></li>
+                    <li><a href="#relics">Relic Sets & Stats</a></li>
+                    <li><a href="#teams">Team Compositions</a></li>
+                    <li><a href="#rotation">Optimal Rotation</a></li>
+                    <li><a href="#eidolon">Eidolon Priority</a></li>
                 </ul>
             </div>
 
             <section id="overview" class="guide-section">
-                <h2>🎯 角色概览与定位</h2>
-                <p>镜流是云骑军的前任剑首，作为冰属性毁灭命途角色，她拥有独特的「转魄」机制。通过消耗队友血量进入「朔望」状态，大幅提升暴击伤害并解锁强化技能，成为当前版本最强的单体爆发输出之一。</p>
+                <h2>🎯 Character Overview</h2>
+                <p>Jingliu, the former Sword Champion of the Cloud Knights, is an Ice Destruction character with a unique "Transcendence" mechanic. By consuming ally HP to enter "Lunar Embodiment" state, she gains massive CRIT DMG bonus and unlocks enhanced skills, becoming one of the strongest single-target burst DPS in the current meta.</p>
                 
                 <div class="info-box">
-                    <strong>核心优势：</strong>极高的暴击伤害倍率、优秀的对单输出能力、相对宽松的遗器需求（自带爆伤加成）
+                    <strong>Key Strengths:</strong> Extremely high CRIT DMG scaling, excellent single-target damage, relatively forgiving relic requirements (built-in CRIT DMG bonus)
                 </div>
                 
                 <div class="warning-box">
-                    <strong>注意事项：</strong>需要队伍中有足够的治疗支持，转魄状态有回合数限制，需合理规划输出节奏
+                    <strong>Important Notes:</strong> Requires sufficient healing support in team, Lunar Embodiment has limited duration, need to plan rotation carefully
                 </div>
             </section>
 
             <section id="lightcone" class="guide-section">
-                <h2>⚔️ 光锥选择与对比</h2>
+                <h2>⚔️ Light Cone Comparison</h2>
                 
-                <h3>T0 - 专属光锥：「到不了的彼岸」</h3>
+                <h3>T0 - Signature Light Cone: "On the Fall of an Aeon"</h3>
                 <table>
-                    <tr><th>属性</th><th>数值</th></tr>
-                    <tr><td>基础攻击力</td><td>705 (满级)</td></tr>
-                    <tr><td>暴击伤害</td><td>64%</td></tr>
-                    <tr><td>特效</td><td>暴击率提升18%，释放终结技后下一次攻击伤害提升60%</td></tr>
+                    <tr><th>Stats</th><th>Values</th></tr>
+                    <tr><td>Base ATK</td><td>705 (Max Level)</td></tr>
+                    <tr><td>CRIT DMG</td><td>64%</td></tr>
+                    <tr><td>Effect</td><td>Increases CRIT Rate by 18%. After using Ultimate, next attack deals 60% more DMG</td></tr>
                 </table>
-                <p>专武完美契合镜流的输出模式，高额爆伤副词条配合特效的增伤，相比四星光锥提升约25-30%。</p>
+                <p>Her signature LC perfectly synergizes with Jingliu's kit. The high CRIT DMG substat combined with the damage bonus effect provides approximately 25-30% more damage compared to 4-star alternatives.</p>
 
-                <h3>T1 - 四星替代方案</h3>
+                <h3>T1 - Four-Star Alternatives</h3>
                 <ul>
-                    <li><strong>「无可取代的东西」</strong> - 巡猎通用光锥，击杀回血适合持续作战</li>
-                    <li><strong>「论剑」</strong> - 对单特化，叠满后增伤可观，适合忘却之庭</li>
-                    <li><strong>「星海巡航」</strong> - 大月卡光锥，暴击率+击杀加攻</li>
+                    <li><strong>"Something Irreplaceable"</strong> - General Hunt LC, healing on kill suitable for sustained fights</li>
+                    <li><strong>"Swordplay"</strong> - Single-target specialized, significant damage when fully stacked, ideal for Memory of Chaos</li>
+                    <li><strong>"Cruising in the Stellar Sea"</strong> - Nameless Glory LC, CRIT Rate + ATK buff on kill</li>
                 </ul>
             </section>
 
             <section id="relics" class="guide-section">
-                <h2>🛡️ 遗器套装与词条优先级</h2>
+                <h2>🛡️ Relic Sets & Stat Priority</h2>
                 
-                <h3>推荐套装组合</h3>
+                <h3>Recommended Set Combination</h3>
                 <div class="info-box">
-                    <strong>4件套：</strong>「死水深潜的先驱」- 提高暴击率和爆伤<br>
-                    <strong>2件套：</strong>「空间封印站」或「停转的萨尔索图」- 进一步提升输出
+                    <strong>4-Piece:</strong> "Hunter of Glacial Forest" - Increases Ice DMG and CRIT stats<br>
+                    <strong>2-Piece:</strong> "Space Sealing Station" or "Inert Salsotto" - Further damage enhancement
                 </div>
 
-                <h3>主词条选择</h3>
+                <h3>Main Stat Selection</h3>
                 <table>
-                    <tr><th>部位</th><th>推荐主词条</th></tr>
-                    <tr><td>头部</td><td>固定生命值</td></tr>
-                    <tr><td>手部</td><td>固定攻击力</td></tr>
-                    <tr><td>躯干</td><td>暴击率 / 暴击伤害（根据副词条调整）</td></tr>
-                    <tr><td>脚部</td><td>速度（优先）/ 攻击力百分比</td></tr>
-                    <tr><td>位面球</td><td>冰属性伤害加成</td></tr>
-                    <tr><td>连接绳</td><td>攻击力百分比</td></tr>
+                    <tr><th>Slot</th><th>Recommended Main Stat</th></tr>
+                    <tr><td>Head</td><td>Fixed HP</td></tr>
+                    <tr><td>Hands</td><td>Fixed ATK</td></tr>
+                    <tr><td>Body</td><td>CRIT Rate / CRIT DMG (adjust based on substats)</td></tr>
+                    <tr><td>Feet</td><td>SPD (priority) / ATK%</td></tr>
+                    <tr><td>Planar Sphere</td><td>Ice DMG Bonus</td></tr>
+                    <tr><td>Link Rope</td><td>ATK%</td></tr>
                 </table>
 
-                <h3>副词条优先级</h3>
-                <p>暴击率 ≈ 暴击伤害 > 速度 > 攻击力百分比 > 效果命中</p>
+                <h3>Substat Priority</h3>
+                <p>CRIT Rate ≈ CRIT DMG > SPD > ATK% > Effect Hit Rate</p>
                 <div class="info-box">
-                    <strong>双爆阈值建议：</strong>考虑到镜流转魄状态的爆伤加成，面板达到60%暴击率+150%暴击伤害即可满足大部分场景需求，无需过度追求极致双爆。
+                    <strong>CRIT Threshold Recommendation:</strong> Considering Jingliu's built-in CRIT DMG bonus from Transcendence state, achieving 60% CRIT Rate + 150% CRIT DMG on relics is sufficient for most scenarios. No need to over-invest in perfect CRIT stats.
                 </div>
             </section>
 
             <section id="teams" class="guide-section">
-                <h2>👥 配队方案详解</h2>
+                <h2>👥 Team Compositions</h2>
                 
-                <h3>方案一：经典三保一（推荐）</h3>
+                <h3>Composition 1: Classic Triple-Support (Recommended)</h3>
                 <div class="team-composition">
-                    <h4>阵容配置</h4>
+                    <h4>Team Setup</h4>
                     <div class="team-members">
-                        <div class="team-member">镜流 (主C)</div>
-                        <div class="team-member">布洛妮娅 (拉条增伤)</div>
-                        <div class="team-member">佩拉 (减防辅助)</div>
-                        <div class="team-member">白露/符玄 (生存位)</div>
+                        <div class="team-member">Jingliu (Main DPS)</div>
+                        <div class="team-member">Bronya (Action Advance + DMG Buff)</div>
+                        <div class="team-member">Pela (DEF Shred Support)</div>
+                        <div class="team-member">Bailu/Fu Xuan (Sustain)</div>
                     </div>
-                    <p style="margin-top: 1rem;"><strong>核心思路：</strong>布洛妮娅拉条让镜流连续行动，佩拉大招群体减防，最大化单次爆发伤害。适合忘却之庭快速清场。</p>
+                    <p style="margin-top: 1rem;"><strong>Core Strategy:</strong> Bronya advances Jingliu's action for consecutive turns, Pela's Ultimate applies group DEF reduction, maximizing single-burst damage. Ideal for quick clears in Memory of Chaos.</p>
                 </div>
 
-                <h3>方案二：双C均衡流</h3>
+                <h3>Composition 2: Dual-Carry Balanced</h3>
                 <div class="team-composition">
-                    <h4>阵容配置</h4>
+                    <h4>Team Setup</h4>
                     <div class="team-members">
-                        <div class="team-member">镜流</div>
-                        <div class="team-member">希儿/刃</div>
-                        <div class="team-member">艾丝妲/停云</div>
-                        <div class="team-member">娜塔莎/火主</div>
+                        <div class="team-member">Jingliu</div>
+                        <div class="team-member">Seele/Blade</div>
+                        <div class="team-member">Asta/Tingyun</div>
+                        <div class="team-member">Natasha/Trailblazer (Fire)</div>
                     </div>
-                    <p style="margin-top: 1rem;"><strong>核心思路：</strong>应对多波次敌人，两个C位交替输出避免真空期。适合模拟宇宙长线作战。</p>
+                    <p style="margin-top: 1rem;"><strong>Core Strategy:</strong> Handle multiple waves with two DPS characters alternating attacks to avoid damage downtime. Suitable for long Simulated Universe runs.</p>
                 </div>
             </section>
 
             <section id="rotation" class="guide-section">
-                <h2>🔄 输出循环与实战手法</h2>
-                <p>镜流的标准输出循环为：普攻积攒转魄点数 → 战技进入朔望状态 → 强化普攻/强化战技输出 → 终结技爆发。</p>
+                <h2>🔄 Optimal Rotation & Combat Tips</h2>
+                <p>Jingliu's standard rotation: Basic Attack to build Transcendence points → Skill to enter Lunar Embodiment → Enhanced Basic Attack/Skill damage → Ultimate burst.</p>
                 <div class="info-box">
-                    <strong>关键技巧：</strong>在转魄状态的最后回合使用终结技+强化战技的组合，可以打出最高爆发。注意控制队友血量，避免被反杀。
+                    <strong>Key Technique:</strong> Use Ultimate + Enhanced Skill combination in the final turn of Lunar Embodiment state for maximum burst damage. Monitor ally HP carefully to avoid accidental deaths.
                 </div>
             </section>
 
             <section id="eidolon" class="guide-section">
-                <h2>⭐ 星魂优先级分析</h2>
+                <h2>⭐ Eidolon Priority Analysis</h2>
                 <table>
-                    <tr><th>星魂</th><th>提升幅度</th><th>推荐度</th></tr>
-                    <tr><td>E1</td><td>中等</td><td>★★★☆☆</td></tr>
-                    <tr><td>E2</td><td>高</td><td>★★★★☆</td></tr>
-                    <tr><td>E4</td><td>极高</td><td>★★★★★</td></tr>
-                    <tr><td>E6</td><td>质变</td><td>★★★★★</td></tr>
+                    <tr><th>Eidolon</th><th>Impact</th><th>Recommendation</th></tr>
+                    <tr><td>E1</td><td>Moderate</td><td>★★★☆☆</td></tr>
+                    <tr><td>E2</td><td>High</td><td>★★★★☆</td></tr>
+                    <tr><td>E4</td><td>Very High</td><td>★★★★★</td></tr>
+                    <tr><td>E6</td><td>Game-Changing</td><td>★★★★★</td></tr>
                 </table>
-                <p>E2和E4是性价比最高的两个星魂，分别提升了启动速度和爆发上限。E6则是完全体，但获取成本较高。</p>
+                <p>E2 and E4 offer the best value, improving startup speed and burst ceiling respectively. E6 represents the complete form but has high acquisition cost.</p>
             </section>
 
             <div class="info-box" style="margin-top: 2rem;">
-                <strong>📝 更新日期：</strong>2026年6月12日<br>
-                <strong>✍️ 作者：</strong>StarDB攻略组<br>
-                <strong>💬 讨论交流：</strong>加入我们的 <a href="https://discord.gg/dk86968">Discord社区</a> 或 <a href="https://t.me/rich8696">Telegram频道</a>
+                <strong>📝 Last Updated:</strong> June 15, 2026<br>
+                <strong>✍️ Author:</strong> StarDB Guide Team<br>
+                <strong>💬 Community:</strong> Join our <a href="https://discord.gg/dk86968">Discord Server</a> or <a href="https://t.me/rich8696">Telegram Channel</a>
             </div>
         </article>
     </main>
@@ -241,32 +241,32 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>⭐ StarDB</h4>
-                    <p>崩坏：星穹铁道专业攻略站</p>
+                    <p>Your ultimate Honkai: Star Rail resource hub</p>
                     <div class="footer-social">
                         <a href="https://discord.gg/dk86968" target="_blank" rel="noopener noreferrer" class="footer-social-link">💬 Discord</a>
                         <a href="https://t.me/rich8696" target="_blank" rel="noopener noreferrer" class="footer-social-link">📱 Telegram</a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>攻略分类</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/characters/">角色攻略</a></li>
-                        <li><a href="/memory-of-chaos/">忘却之庭</a></li>
-                        <li><a href="/simulated-universe/">模拟宇宙</a></li>
-                        <li><a href="/tier-list/">节奏榜</a></li>
+                        <li><a href="/characters/">Characters</a></li>
+                        <li><a href="/memory-of-chaos/">Memory of Chaos</a></li>
+                        <li><a href="/simulated-universe/">Simulated Universe</a></li>
+                        <li><a href="/tier-list/">Tier List</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>帮助中心</h4>
+                    <h4>Support</h4>
                     <ul>
-                        <li><a href="/faq/">常见问题FAQ</a></li>
-                        <li><a href="/about/">关于我们</a></li>
-                        <li><a href="/contact/">联系我们</a></li>
+                        <li><a href="/faq/">FAQ</a></li>
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/contact/">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 StarDB (stardb.info). 本站为粉丝制作，与米哈游/HoYoverse无关。</p>
+                <p>&copy; 2026 StarDB (stardb.info). Fan-made website, not affiliated with miHoYo/HoYoverse.</p>
             </div>
         </div>
     </footer>
